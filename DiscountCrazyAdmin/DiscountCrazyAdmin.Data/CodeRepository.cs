@@ -1,13 +1,13 @@
-﻿Codesusing System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DiscountCrazyAdmin.Core;
+using DiscountCrazyAdmin.Data.Entities;
+
 
 namespace DiscountCrazyAdmin.Data
 {
-    public class BusinessCategoryReposittory
+    public class CodeRepository : Repository<Code>, IRepository<Code>
     {
-
+        public CodeRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
+        {
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,41 +9,40 @@ namespace DiscountCrazyAdmin.Core
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-
-        public DbContext context;
-        public DbSet<T> dbset;
-        public Repository(DbContext context)
+        private DbSet<T> _dbset;
+        private readonly DbContext _dbContext;
+        public Repository(IUnitOfWork unitOfWork)
         {
-            this.context = context;
-            dbset = context.Set<T>();
+            _dbset = unitOfWork.Set<T>();
+            _dbContext = unitOfWork.DbContext;
         }
 
         public T GetById(int id)
         {
-            return dbset.Find(id);
+            return _dbset.Find(id);
         }
 
 
         public IQueryable<T> GetAll()
         {
-            return dbset;
+            return _dbset;
         }
 
         public void Insert(T entity)
         {
-            dbset.Add(entity);
+            _dbset.Add(entity);
         }
 
 
-        public void Edit(T entity)
+        public void Update(T entity)
         {
-            context.Entry(entity).State = EntityState.Modified;
+            _dbContext.Entry(entity).State = EntityState.Modified;
         }
 
 
         public void Delete(T entity)
         {
-            context.Entry(entity).State = EntityState.Deleted;
+            _dbContext.Entry(entity).State = EntityState.Deleted;
         }
 
     }
