@@ -1,0 +1,1 @@
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\obj\Debug\DiscountCrazyAdmin.Autofac.Integration.csprojResolveAssemblyReference.cache

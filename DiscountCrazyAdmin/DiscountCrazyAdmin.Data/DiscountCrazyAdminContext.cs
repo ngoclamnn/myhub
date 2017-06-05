@@ -6,9 +6,9 @@ namespace DiscountCrazyAdmin.Data
     using System.Linq;
     using global::DiscountCrazyAdmin.Data.Entities;
 
-    public partial class DiscountCrazyAdmin : DbContext
+    public partial class DiscountCrazyAdminContext : DbContext
     {
-        public DiscountCrazyAdmin()
+        public DiscountCrazyAdminContext()
             : base("name=DiscountCrazyAdmin")
         {
         }

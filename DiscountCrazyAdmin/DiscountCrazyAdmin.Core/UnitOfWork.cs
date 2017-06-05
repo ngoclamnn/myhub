@@ -13,6 +13,10 @@ namespace DiscountCrazyAdmin.Core
         private DbContext _context;
         private DbSet _dbSet;
 
+        public DbContext DbContext
+
+        { get { return _context; } }
+
         public DbSet<T> Set<T>() where T : class
         {
             return _context.Set<T>();

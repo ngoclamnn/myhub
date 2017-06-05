@@ -5,7 +5,7 @@ namespace DiscountCrazyAdmin.Core
 {
     public interface IUnitOfWork : IDisposable
     {
-        DbContext DbContext { get; set; }
+        DbContext DbContext { get; }
         DbSet<T> Set<T>() where T : class;
         void Save();
 

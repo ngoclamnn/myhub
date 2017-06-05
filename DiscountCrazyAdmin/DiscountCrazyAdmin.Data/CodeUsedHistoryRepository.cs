@@ -10,6 +10,8 @@ namespace DiscountCrazyAdmin.Data
 {
     public class CodeUsedHistoryRepository : Repository<CodeUsedHistory>, IRepository<CodeUsedHistory>
     {
-
+        public CodeUsedHistoryRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
+        {
+        }
     }
 }

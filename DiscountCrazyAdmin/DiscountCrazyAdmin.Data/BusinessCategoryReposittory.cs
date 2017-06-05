@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace DiscountCrazyAdmin.Data
 {
-    public class BusinessCategoryReposittory : Repository<BusinessCategory>, IRepository<BusinessCategory>
+    public class BusinessCategoryRepository : Repository<BusinessCategory>, IRepository<BusinessCategory>
     {
-        private readonly IUnitOfWork _unitOfWork;
+        public BusinessCategoryRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
+        {
+        }
     }
 }

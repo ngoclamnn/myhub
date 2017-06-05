@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiscountCrazyAdminUnitOfWork.cs" />
     <Compile Include="Entities\BusinessCategory.cs" />
     <Compile Include="Entities\Code.cs" />
     <Compile Include="Entities\CodeUsedHistory.cs" />

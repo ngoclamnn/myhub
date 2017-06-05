@@ -1,15 +1,17 @@
 ﻿using DiscountCrazyAdmin.Core;
-using DiscountCrazyAdmin.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace DiscountCrazyAdmin.Data
 {
-    public class StoreRepository : Repository<Store>, IRepository<Store>
+    public class DiscountCrazyAdminUnitOfWork : UnitOfWork, IUnitOfWork
     {
-
+        public DiscountCrazyAdminUnitOfWork(DbContext context) : base(context)
+        {
+        }
     }
 }

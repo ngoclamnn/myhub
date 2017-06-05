@@ -33,7 +33,14 @@
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,13 +51,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutofacRegister.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="RepositoryModule.cs" />
+    <Compile Include="CoreModule.cs" />
+    <Compile Include="ServiceModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DiscountCrazyAdmin.Core\DiscountCrazyAdmin.Core.csproj">
+      <Project>{225f1db6-928c-4e2a-b81f-cc48e481c8d4}</Project>
+      <Name>DiscountCrazyAdmin.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiscountCrazyAdmin.Data\DiscountCrazyAdmin.Data.csproj">
+      <Project>{6a50f5a7-243f-4c36-a2a9-843cc266f2bc}</Project>
+      <Name>DiscountCrazyAdmin.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiscountCrazyAdmin.Domain\DiscountCrazyAdmin.Service.csproj">
+      <Project>{c0fcc038-e7b6-4293-9b66-4c482f7fa702}</Project>
+      <Name>DiscountCrazyAdmin.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
