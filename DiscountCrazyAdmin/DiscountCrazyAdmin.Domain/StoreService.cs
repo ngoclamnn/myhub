@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiscountCrazyAdmin.Domain
+namespace DiscountCrazyAdmin.Services
 {
     public interface IStoreService
     {

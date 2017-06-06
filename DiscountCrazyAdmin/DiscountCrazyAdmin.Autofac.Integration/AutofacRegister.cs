@@ -9,12 +9,14 @@ namespace DiscountCrazyAdmin.Autofac.Integration
 {
     public static class AutofacRegister
     {
-        public static void Setup()
+        public static ContainerBuilder Setup()
         {
             var builder = new ContainerBuilder();
             builder.RegisterModule(new RepositoryModule());
             builder.RegisterModule(new ServiceModule());
             builder.RegisterModule(new CoreModule());
+
+            return builder;
         }
     }
 }

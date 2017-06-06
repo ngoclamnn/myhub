@@ -58,16 +58,16 @@
     <Compile Include="Entities\Promotion.cs" />
     <Compile Include="Entities\PromotionCode.cs" />
     <Compile Include="Entities\Store.cs" />
-    <Compile Include="StoreRepository.cs" />
-    <Compile Include="PromotionRepository.cs" />
+    <Compile Include="Repositories\StoreRepository.cs" />
+    <Compile Include="Repositories\PromotionRepository.cs" />
     <Compile Include="Entities\sysdiagram.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="UserRepository.cs" />
-    <Compile Include="PromotionCodeRepository.cs" />
-    <Compile Include="DiscountTypeRepository.cs" />
-    <Compile Include="CodeUsedHistoryRepository.cs" />
-    <Compile Include="CodeRepository.cs" />
-    <Compile Include="BusinessCategoryReposittory.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\PromotionCodeRepository.cs" />
+    <Compile Include="Repositories\DiscountTypesRepository.cs" />
+    <Compile Include="Repositories\CodeUsedHistoryRepository.cs" />
+    <Compile Include="Repositories\CodeRepository.cs" />
+    <Compile Include="Repositories\BusinessCategoryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

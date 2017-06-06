@@ -11,7 +11,6 @@ namespace DiscountCrazyAdmin.Core
     {
 
         private DbContext _context;
-        private DbSet _dbSet;
 
         public DbContext DbContext
 

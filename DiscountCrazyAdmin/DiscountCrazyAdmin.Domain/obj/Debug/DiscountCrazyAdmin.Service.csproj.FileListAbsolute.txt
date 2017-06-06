@@ -1,5 +1,13 @@
-D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Domain.dll
-D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Domain.pdb
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\obj\Debug\DiscountCrazyAdmin.Service.csprojResolveAssemblyReference.cache
-D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\obj\Debug\DiscountCrazyAdmin.Domain.dll
-D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\obj\Debug\DiscountCrazyAdmin.Domain.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Core.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Data.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\EntityFramework.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Core.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Core.dll.config
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Data.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Data.dll.config
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\EntityFramework.xml
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Service.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\bin\Debug\DiscountCrazyAdmin.Service.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\obj\Debug\DiscountCrazyAdmin.Service.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Domain\obj\Debug\DiscountCrazyAdmin.Service.pdb

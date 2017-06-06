@@ -1,1 +1,10 @@
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\obj\Debug\DiscountCrazyAdmin.Core.csprojResolveAssemblyReference.cache
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\DiscountCrazyAdmin.Core.dll.config
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\DiscountCrazyAdmin.Core.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\DiscountCrazyAdmin.Core.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\EntityFramework.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\EntityFramework.xml
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\obj\Debug\DiscountCrazyAdmin.Core.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Core\obj\Debug\DiscountCrazyAdmin.Core.pdb

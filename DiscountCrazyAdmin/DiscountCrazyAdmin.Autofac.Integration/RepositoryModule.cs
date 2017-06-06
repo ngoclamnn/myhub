@@ -8,7 +8,7 @@ namespace DiscountCrazyAdmin.Autofac.Integration
     {   
         protected override void Load(ContainerBuilder builder)
         {
-            var dataAccess = System.Reflection.Assembly.Load("DiscountCrazyAdmin.Repository");
+            var dataAccess = System.Reflection.Assembly.Load("DiscountCrazyAdmin.Data");
 
             builder.RegisterAssemblyTypes(dataAccess)
                    .Where(t => t.Name.EndsWith("Repository"))
