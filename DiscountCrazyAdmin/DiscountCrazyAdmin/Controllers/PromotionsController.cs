@@ -9,17 +9,17 @@ using System.Web.Http;
 
 namespace DiscountCrazyAdmin.Controllers
 {
-    public class BusinessCategoryController : ApiController
+    public class PromotionsController : ApiController
     {
-        private readonly IApplicationService _applicationService;
-        public BusinessCategoryController(IApplicationService applicationService)
+        private readonly IDiscountService _discountService;
+        public PromotionsController(IDiscountService discountService)
         {
-            _applicationService = applicationService;
+            _discountService = discountService;
         }
 
-        public BusinessCategory Get(int id)
+        public Promotion Get(int id)
         {
-            return _applicationService.GetBusinessCategoryById(id);
+            return _discountService.GetPromotionById(id);
         }
     }
 }

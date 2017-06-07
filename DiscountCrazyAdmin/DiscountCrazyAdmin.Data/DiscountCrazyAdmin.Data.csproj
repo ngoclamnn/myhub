@@ -58,6 +58,7 @@
     <Compile Include="Entities\Promotion.cs" />
     <Compile Include="Entities\PromotionCode.cs" />
     <Compile Include="Entities\Store.cs" />
+    <Compile Include="Entities\StoreCode.cs" />
     <Compile Include="Repositories\StoreRepository.cs" />
     <Compile Include="Repositories\PromotionRepository.cs" />
     <Compile Include="Entities\sysdiagram.cs" />

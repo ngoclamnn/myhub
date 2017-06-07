@@ -14,6 +14,7 @@ namespace DiscountCrazyAdmin.Services
         CodeUsedHistory GetCodeUsedHistoryById(int id);
         DiscountType GetDiscountTypeById(int id);
         PromotionCode GetPromotionCodeById(int id);
+        Promotion GetPromotionById(int id);
     }
 
     public class DiscountService : IDiscountService
@@ -21,15 +22,19 @@ namespace DiscountCrazyAdmin.Services
         private readonly ICodeRepository _codeRepository;
         private readonly ICodeUsedHistoryRepository _codeUsedRepository;
         private readonly IDiscountTypesRepository _discountTypeRepository;
-        private readonly IPromotionCodeRepository _promoRepository;
+        private readonly IPromotionCodeRepository _promotionCodeRepository;
+        private readonly IPromotionRepository _promotionRepository;
 
         public DiscountService(ICodeRepository codeRepository, ICodeUsedHistoryRepository codeUsedRepository, 
-            IDiscountTypesRepository discountTypeRepository, IPromotionCodeRepository promoteRepository)
+            IDiscountTypesRepository discountTypeRepository, IPromotionCodeRepository promotionCodeRepository, 
+            IPromotionRepository promotionRepository)
         {
             _codeRepository = codeRepository;
             _codeUsedRepository = codeUsedRepository;
             _discountTypeRepository = discountTypeRepository;
-            _promoRepository = promoteRepository;
+            _promotionCodeRepository = promotionCodeRepository;
+            _promotionRepository = promotionRepository;
+
         }
         public Code GetCodeById(int id)
         {
@@ -48,7 +53,12 @@ namespace DiscountCrazyAdmin.Services
 
         public PromotionCode GetPromotionCodeById(int id)
         {
-            return _promo.get(id);
+            return _promotionCodeRepository.GetById(id);
+        }
+
+        public Promotion GetPromotionById(int id)
+        {
+            return _promotionRepository.GetById(id);
         }
     }
 }
