@@ -10,10 +10,12 @@ namespace DiscountCrazyAdmin.Core
     public class Repository<T> : IRepository<T> where T : class
     {
         private DbSet<T> _dbset;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly DbContext _dbContext;
         public Repository(IUnitOfWork unitOfWork)
         {
             _dbset = unitOfWork.Set<T>();
+            _unitOfWork = unitOfWork;
             _dbContext = unitOfWork.DbContext;
         }
 
@@ -28,15 +30,16 @@ namespace DiscountCrazyAdmin.Core
             return _dbset;
         }
 
-        public void Insert(T entity)
+        public T Insert(T entity)
         {
-            _dbset.Add(entity);
+            return _dbset.Add(entity);
         }
 
 
-        public void Update(T entity)
+        public T Update(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
+            return entity;
         }
 
 
@@ -45,5 +48,10 @@ namespace DiscountCrazyAdmin.Core
             _dbContext.Entry(entity).State = EntityState.Deleted;
         }
 
+
+        public void Save()
+        {
+            _unitOfWork.Save();
+        }
     }
 }

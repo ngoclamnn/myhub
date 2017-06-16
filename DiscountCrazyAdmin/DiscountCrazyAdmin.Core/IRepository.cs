@@ -10,11 +10,13 @@ namespace DiscountCrazyAdmin.Core
 
         IQueryable<T> GetAll();
 
-        void Update(T entity);
+        T Update(T entity);
 
-        void Insert(T entity);
+        T Insert(T entity);
 
         void Delete(T entity);
+
+        void Save();
 
     }
 }

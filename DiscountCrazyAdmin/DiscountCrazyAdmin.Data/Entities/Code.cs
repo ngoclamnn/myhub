@@ -1,5 +1,6 @@
 namespace DiscountCrazyAdmin.Data.Entities
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -13,6 +14,7 @@ namespace DiscountCrazyAdmin.Data.Entities
         {
             CodeUsedHistories = new HashSet<CodeUsedHistory>();
             PromotionCodes = new HashSet<PromotionCode>();
+            StoreCodes = new HashSet<StoreCode>();
         }
 
         public int id { get; set; }
@@ -24,7 +26,7 @@ namespace DiscountCrazyAdmin.Data.Entities
         [Column("code")]
         [Required]
         [StringLength(12)]
-        public string code1 { get; set; }
+        public string code { get; set; }
 
         public double discount_value { get; set; }
 
@@ -47,13 +49,16 @@ namespace DiscountCrazyAdmin.Data.Entities
         [Required]
         [StringLength(50)]
         public string modified_by { get; set; }
-
+        [JsonIgnore]
         public virtual DiscountType DiscountType { get; set; }
-
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CodeUsedHistory> CodeUsedHistories { get; set; }
-
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PromotionCode> PromotionCodes { get; set; }
+        [JsonIgnore]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StoreCode> StoreCodes { get; set; }
     }
 }

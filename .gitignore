@@ -8,3 +8,6 @@
 /.vs/slnx.sqlite-journal
 /.vs/slnx.sqlite
 /DiscountCrazyAdmin/packages
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Autofac.Integration/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Data/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Domain/bin/Debug

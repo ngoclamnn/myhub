@@ -11,15 +11,52 @@ namespace DiscountCrazyAdmin.Controllers
 {
     public class CodesController : ApiController
     {
-        private readonly IApplicationService _applicationService;
-        public CodesController(IApplicationService applicationService)
+        private readonly IDiscountService _discountService;
+        public CodesController(IDiscountService discountService)
         {
-            _applicationService = applicationService;
+            _discountService = discountService;
         }
 
         public Code Get(int id)
         {
-            return _applicationService.GetBusinessCategoryById(id);
+            return _discountService.GetCodeById(id);
+        }
+
+        [Route("api/codes/createcode")]
+        [HttpPost]
+        public Code Create(Code entity)
+        {
+            entity.created = DateTime.Now;
+            entity.modified = DateTime.Now;
+            entity = _discountService.CreateCode(entity);
+            _discountService.SaveCode();
+            return entity;
+        }
+
+        [Route("api/codes/createcodes")]
+        [HttpPost]
+        public List<Code> CreateCodes(List<Code> entities)
+        {
+            entities = _discountService.CreateCodes(entities);
+            _discountService.SaveCode();
+            return entities;
+        }
+
+        [HttpPut]
+        public Code Update(Code entity)
+        {
+            entity.modified = DateTime.Now;
+            entity = _discountService.UpdateCode(entity);
+            _discountService.SaveCode();
+            return entity;
+        }
+
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
+        {
+            _discountService.DeleteCode(id);
+            _discountService.SaveCode();
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

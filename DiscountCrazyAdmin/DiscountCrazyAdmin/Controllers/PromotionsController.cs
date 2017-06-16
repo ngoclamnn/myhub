@@ -17,9 +17,37 @@ namespace DiscountCrazyAdmin.Controllers
             _discountService = discountService;
         }
 
+        [HttpGet]
         public Promotion Get(int id)
         {
             return _discountService.GetPromotionById(id);
+        }
+
+        [HttpPost]
+        public Promotion Create(Promotion entity)
+        {
+            entity.created = DateTime.Now;
+            entity.modified = DateTime.Now;
+            entity = _discountService.CreatePromotion(entity);
+            _discountService.SavePromotion();
+            return entity;
+        }
+
+        [HttpPut]
+        public Promotion Update(Promotion entity)
+        {
+            entity.modified = DateTime.Now;
+            entity = _discountService.UpdatePromotion(entity);
+            _discountService.SavePromotion();
+            return entity;
+        }
+
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
+        {
+            _discountService.DeletePromotion(id);
+            _discountService.SavePromotion();
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

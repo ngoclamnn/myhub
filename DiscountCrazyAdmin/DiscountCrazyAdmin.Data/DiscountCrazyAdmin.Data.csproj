@@ -36,6 +36,10 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -49,20 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiscountCrazyAdminUnitOfWork.cs" />
     <Compile Include="Entities\BusinessCategory.cs" />
     <Compile Include="Entities\Code.cs" />
     <Compile Include="Entities\CodeUsedHistory.cs" />
     <Compile Include="DiscountCrazyAdminContext.cs" />
+    <Compile Include="DiscountCrazyAdminUnitOfWork.cs" />
     <Compile Include="Entities\DiscountType.cs" />
     <Compile Include="Entities\Promotion.cs" />
     <Compile Include="Entities\PromotionCode.cs" />
-    <Compile Include="Entities\Store.cs" />
-    <Compile Include="Entities\StoreCode.cs" />
     <Compile Include="Repositories\StoreRepository.cs" />
     <Compile Include="Repositories\PromotionRepository.cs" />
-    <Compile Include="Entities\sysdiagram.cs" />
-    <Compile Include="Entities\User.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Repositories\PromotionCodeRepository.cs" />
     <Compile Include="Repositories\DiscountTypesRepository.cs" />
@@ -70,6 +70,10 @@
     <Compile Include="Repositories\CodeRepository.cs" />
     <Compile Include="Repositories\BusinessCategoryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Store.cs" />
+    <Compile Include="Entities\StoreCode.cs" />
+    <Compile Include="Entities\sysdiagram.cs" />
+    <Compile Include="Entities\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DiscountCrazyAdmin.Core\DiscountCrazyAdmin.Core.csproj">

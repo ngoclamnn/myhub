@@ -1,5 +1,6 @@
 namespace DiscountCrazyAdmin.Data.Entities
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -26,9 +27,9 @@ namespace DiscountCrazyAdmin.Data.Entities
         public DateTime created { get; set; }
 
         public DateTime modified { get; set; }
-
+        [JsonIgnore]
         public virtual Code Code { get; set; }
-
+        [JsonIgnore]
         public virtual Promotion Promotion { get; set; }
     }
 }

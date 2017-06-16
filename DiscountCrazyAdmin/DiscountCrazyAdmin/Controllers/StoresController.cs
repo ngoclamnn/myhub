@@ -9,10 +9,10 @@ using System.Web.Http;
 
 namespace DiscountCrazyAdmin.Controllers
 {
-    public class BusinessCategoryController : ApiController
+    public class StoresController : ApiController
     {
         private readonly IApplicationService _applicationService;
-        public BusinessCategoryController(IApplicationService applicationService)
+        public StoresController(IApplicationService applicationService)
         {
             _applicationService = applicationService;
         }

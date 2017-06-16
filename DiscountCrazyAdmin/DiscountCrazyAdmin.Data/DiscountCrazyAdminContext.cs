@@ -4,12 +4,12 @@ namespace DiscountCrazyAdmin.Data
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-    using global::DiscountCrazyAdmin.Data.Entities;
+    using DiscountCrazyAdmin.Data.Entities;
 
     public partial class DiscountCrazyAdminContext : DbContext
     {
         public DiscountCrazyAdminContext()
-            : base("name=DiscountCrazyAdmin")
+            : base("name=DiscountCrazyAdminContext")
         {
         }
 
@@ -19,6 +19,7 @@ namespace DiscountCrazyAdmin.Data
         public virtual DbSet<DiscountType> DiscountTypes { get; set; }
         public virtual DbSet<PromotionCode> PromotionCodes { get; set; }
         public virtual DbSet<Promotion> Promotions { get; set; }
+        public virtual DbSet<StoreCode> StoreCodes { get; set; }
         public virtual DbSet<Store> Stores { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
@@ -43,7 +44,7 @@ namespace DiscountCrazyAdmin.Data
                 .HasForeignKey(e => e.business_category_id);
 
             modelBuilder.Entity<Code>()
-                .Property(e => e.code1)
+                .Property(e => e.code)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Code>()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscountCrazyAdmin.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -11,7 +12,7 @@ namespace DiscountCrazyAdmin.Controllers
     {
        public StoreCode Get(int id)
         {
-
+            return new StoreCode();
         }
     }
 }

@@ -1,5 +1,6 @@
 namespace DiscountCrazyAdmin.Data.Entities
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -12,6 +13,7 @@ namespace DiscountCrazyAdmin.Data.Entities
         public Store()
         {
             Promotions = new HashSet<Promotion>();
+            StoreCodes = new HashSet<StoreCode>();
         }
 
         public int id { get; set; }
@@ -76,12 +78,15 @@ namespace DiscountCrazyAdmin.Data.Entities
         [Required]
         [StringLength(50)]
         public string modified_by { get; set; }
-
+        [JsonIgnore]
         public virtual BusinessCategory BusinessCategory { get; set; }
-
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Promotion> Promotions { get; set; }
-
+        [JsonIgnore]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StoreCode> StoreCodes { get; set; }
+        [JsonIgnore]
         public virtual User User { get; set; }
     }
 }

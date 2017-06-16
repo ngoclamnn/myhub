@@ -1,13 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace DiscountCrazyAdmin.Data.Entities
 {
-    public class StoreCode
-    {
+    using Newtonsoft.Json;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
+    public partial class StoreCode
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+
+        public int? StoreId { get; set; }
+
+        public int? CodeId { get; set; }
+        [JsonIgnore]
+        public virtual Code Code { get; set; }
+        [JsonIgnore]
+        public virtual Store Store { get; set; }
     }
 }

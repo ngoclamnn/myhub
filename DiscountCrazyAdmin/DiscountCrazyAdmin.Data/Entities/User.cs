@@ -1,5 +1,6 @@
 namespace DiscountCrazyAdmin.Data.Entities
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -51,7 +52,7 @@ namespace DiscountCrazyAdmin.Data.Entities
         [Required]
         [StringLength(50)]
         public string modified_by { get; set; }
-
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Store> Stores { get; set; }
     }
