@@ -18,3 +18,5 @@ D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\obj\Debug
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\obj\Debug\DiscountCrazyAdmin.Autofac.Integration.pdb
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\bin\Debug\DiscountCrazyAdmin.Service.dll
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\bin\Debug\DiscountCrazyAdmin.Service.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\bin\Debug\Newtonsoft.Json.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Autofac.Integration\bin\Debug\Newtonsoft.Json.xml

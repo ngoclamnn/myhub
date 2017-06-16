@@ -10,4 +10,12 @@
 /DiscountCrazyAdmin/packages
 /DiscountCrazyAdmin/DiscountCrazyAdmin.Autofac.Integration/bin/Debug
 /DiscountCrazyAdmin/DiscountCrazyAdmin.Data/bin/Debug
-/DiscountCrazyAdmin/DiscountCrazyAdmin.Domain/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Service/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Core/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.WebServiceApi/bin/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Autofac.Integration/obj/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Data/obj/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Service/obj/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.Core/obj/Debug
+/DiscountCrazyAdmin/DiscountCrazyAdmin.WebServiceApi/obj/Debug
+

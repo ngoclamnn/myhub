@@ -11,3 +11,5 @@ D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\bin\Debug\EntityFramewor
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\obj\Debug\DiscountCrazyAdmin.Data.dll
 D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\obj\Debug\DiscountCrazyAdmin.Data.pdb
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\bin\Debug\Newtonsoft.Json.dll
+D:\GIT\MyHub\DiscountCrazyAdmin\DiscountCrazyAdmin.Data\bin\Debug\Newtonsoft.Json.xml

@@ -10,7 +10,10 @@ namespace DiscountCrazyAdmin.Controllers
 {
     public class StoreCodesController : ApiController
     {
-       public StoreCode Get(int id)
+        public StoreCodesController()
+        {
+        }
+        public StoreCode Get(int id)
         {
             return new StoreCode();
         }

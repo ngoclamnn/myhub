@@ -283,7 +283,7 @@
       <Project>{6A50F5A7-243F-4C36-A2A9-843CC266F2BC}</Project>
       <Name>DiscountCrazyAdmin.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DiscountCrazyAdmin.Domain\DiscountCrazyAdmin.Service.csproj">
+    <ProjectReference Include="..\DiscountCrazyAdmin.Service\DiscountCrazyAdmin.Service.csproj">
       <Project>{c0fcc038-e7b6-4293-9b66-4c482f7fa702}</Project>
       <Name>DiscountCrazyAdmin.Service</Name>
     </ProjectReference>

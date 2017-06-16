@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCrazyAdmin.WebServiceApi", "DiscountCrazyAdmin\DiscountCrazyAdmin.WebServiceApi.csproj", "{A3F906D6-DA03-4313-8F67-9B8A6DF01344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCrazyAdmin.Service", "DiscountCrazyAdmin.Domain\DiscountCrazyAdmin.Service.csproj", "{C0FCC038-E7B6-4293-9B66-4C482F7FA702}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCrazyAdmin.Service", "DiscountCrazyAdmin.Service\DiscountCrazyAdmin.Service.csproj", "{C0FCC038-E7B6-4293-9B66-4C482F7FA702}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCrazyAdmin.Core", "DiscountCrazyAdmin.Core\DiscountCrazyAdmin.Core.csproj", "{225F1DB6-928C-4E2A-B81F-CC48E481C8D4}"
 EndProject
